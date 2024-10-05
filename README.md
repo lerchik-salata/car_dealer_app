@@ -62,30 +62,35 @@ After the build is complete, you can start the application in production mode:
 
 ### Project structure overview
 
-car_dealer_app/
-├── public/                # Static assets (fonts, images, etc.)
-│   ├── fonts/             # Font files
-│   ├── images/            # Image files
-│
-├── src/                   # Main application source code
-│   ├── app/               # Next.js App Router structure
-│   │   ├── layout.tsx     # Root layout for the app
-│   │   ├── page.tsx       # Main page (home)
-│   │   ├── result/        # Dynamic routes for vehicles
-│   │   │   ├── [make]/    # Dynamic folder for vehicle makes
-│   │   │   │   ├── [year]/ 
-│   │   │   │   │   ├── page.tsx       # Page for specific make and year
-│   │   │   │   │   ├── components/    # Components for the specific page
-│   │
-│   ├── components/        # Reusable React components
-│   ├── styles/            # Tailwind, global, and component-specific styles
-│   ├── types/             # TypeScript types and interfaces
-│
-├── .env.local             # Environment variables (API keys, etc.)
-├── .eslintrc.js           # ESLint configuration for linting
-├── .prettierrc            # Prettier configuration for code formatting
-├── package.json           # Project dependencies and npm scripts
-└── README.md              # Project documentation (this file)
+- **public/** - Static assets (fonts, images, etc.)
+  - **fonts/** - Font files
+  - **images/** - Image files
+
+- **src/** - Main application source code
+  - **app/** - Next.js App Router structure
+    - **layout.tsx** - Root layout for the app
+    - **page.tsx** - Main page (home)
+    - **result/** - Dynamic routes for vehicles
+      - **[make]/** - Dynamic folder for vehicle makes
+        - **[year]/**
+          - **page.tsx** - Page for specific make and year
+          - **components/** - Components for the specific page
+
+  - **components/** - Reusable React components
+
+  - **styles/** - Tailwind, global, and component-specific styles
+
+  - **types/** - TypeScript types and interfaces
+
+- **.env.local** - Environment variables (API keys, etc.)
+
+- **.eslintrc.js** - ESLint configuration for linting
+
+- **.prettierrc** - Prettier configuration for code formatting
+
+- **package.json** - Project dependencies and npm scripts
+
+- **README.md** - Project documentation (this file)
 
 ## Screenshots
 
