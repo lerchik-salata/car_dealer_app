@@ -30,7 +30,7 @@ export async function generateStaticParams() {
   }));
 }
 
-const ResultPage = ({ params }: { params: { make: string; year: string } }) => {
+const ResultPage = ({ params }: { params: { make: string; year: number } }) => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
       <h1 className="text-2xl mb-8 text-white border-b-4 border-red-700 pb-2 uppercase tracking-wider">
